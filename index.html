@@ -11,23 +11,15 @@
   </head>
   <body>
     <div class="wrap">
-      <header class="hero">
+      <header class="hero panel">
         <h1>Lead Finder</h1>
-        <p>Find emails and company/person details with a simple workflow.</p>
+        <p>Search for email and profile information using the options below.</p>
       </header>
 
-      <main class="layout">
+      <main class="layout two-col">
         <section class="panel">
-          <h2>Settings</h2>
-          <p class="muted">Use the default key or enter your own.</p>
-          <div class="field-group">
-            <label for="apiKey">API Key</label>
-            <input id="apiKey" type="password" placeholder="Enter API key (optional)" />
-          </div>
-        </section>
-
-        <section class="panel">
-          <h2>Search</h2>
+          <h2>Search Options</h2>
+          <p class="muted">Pick a search type, fill in details, and run.</p>
           <div id="tabs" class="tabs"></div>
           <form id="endpointForm"></form>
           <div class="actions">

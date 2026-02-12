@@ -35,7 +35,6 @@ const tabs = document.querySelector('#tabs');
 const form = document.querySelector('#endpointForm');
 const statusEl = document.querySelector('#status');
 const resultEl = document.querySelector('#result');
-const apiKeyEl = document.querySelector('#apiKey');
 let active = endpoints[0];
 let lastResult = null;
 
@@ -91,7 +90,7 @@ function getPayload() {
     if (field.required && !value) throw new Error(`${field.label} is required.`);
     if (value) params[field.name] = value;
   }
-  return { endpoint: active.path, method: active.method, params, apiKey: apiKeyEl.value.trim() };
+  return { endpoint: active.path, method: active.method, params };
 }
 
 function makeKvBlock(title, obj) {
